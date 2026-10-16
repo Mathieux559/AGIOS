@@ -1,0 +1,33 @@
+:root{--bleu:#12355B;--jaune:#FFD60A;--papier:#F4F6F8;--texte:#14202B;--gris:#55616D;--trait:#D5DBE1}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:18px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--texte);background:#fff;padding-bottom:88px}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+section{padding:40px 0}
+.alt{background:var(--papier)}
+h1,h2{font-family:Georgia,"Times New Roman",serif;color:var(--bleu);line-height:1.12;letter-spacing:-.01em;margin:0 0 14px}
+h1{font-size:clamp(2rem,8.5vw,3.2rem)}
+h2{font-size:1.6rem}
+p{margin:0 0 14px}
+.sous{font-size:1.1rem;color:var(--gris)}
+.bouton{display:block;width:100%;min-height:56px;padding:15px 20px;background:var(--jaune);color:var(--bleu);font-weight:800;font-size:1.1rem;text-align:center;text-decoration:none;border-radius:10px;border:2px solid var(--bleu)}
+.bouton:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--bleu);outline-offset:3px}
+.note{font-size:.9rem;color:var(--gris);margin-top:10px}
+.releve{background:var(--papier);border:1px solid var(--trait);border-radius:6px;padding:14px;font:14px/1.9 ui-monospace,Menlo,Consolas,monospace;margin:26px 0 8px}
+.releve div{display:flex;justify-content:space-between;gap:10px}
+.releve .frais{background:var(--jaune);font-weight:700;margin:0 -6px;padding:0 6px}
+ol.etapes{padding-left:0;list-style:none;margin:0}
+ol.etapes li{border-left:4px solid var(--bleu);padding:2px 0 2px 16px;margin-bottom:20px}
+.garantie{border:2px solid var(--bleu);border-left:10px solid var(--jaune);padding:18px;background:#fff}
+.garantie h2{font-size:1.3rem}
+details{border-bottom:1px solid var(--trait);padding:14px 0}
+summary{font-weight:700;cursor:pointer;color:var(--bleu)}
+details p{margin:10px 0 0}
+footer{padding:28px 0;font-size:.9rem;color:var(--gris)}
+footer a{color:var(--gris);margin-right:16px}
+.barre{position:fixed;left:0;right:0;bottom:0;padding:12px 20px;background:#fff;border-top:1px solid var(--trait)}
+.barre .bouton{max-width:600px;margin:0 auto}
+.todo{background:var(--jaune);padding:0 4px}
+.legal h2{font-size:1.2rem;margin-top:26px}
+.legal a{color:var(--bleu)}
+@media(min-width:800px){.barre{display:none}body{padding-bottom:0}}
